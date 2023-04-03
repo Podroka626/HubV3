@@ -1,11 +1,11 @@
 local StarterGui = game:GetService("StarterGui")
-local Link = game:HttpGet("https://github.com/Podroka626/HubV3/tree/main/Games"..game.PlaceId..".lua")
+local Scripts = game:HttpGet("https://github.com/Podroka626/HubV3/tree/main/Games"..game.PlaceId..".lua")
 
-if Link then
+if Scripts then
   StarterGui:SetCore("SendNotification", {
 		Title = "Wolf Hub",
 		Text = "Loading script.",
 		Duration = 5
 	})
-	loadstring(Link)()
+	loadstring(Scripts)()
 end
